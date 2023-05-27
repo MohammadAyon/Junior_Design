@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name="com.example.myapplication.RegisterUser"
+            android:exported="false"
+            android:label="@string/title_activity_register_user"
+            android:theme="@style/Theme.MyApplication" />
+    </application>
+</manifest>

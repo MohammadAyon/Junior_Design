@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "10962354557",
+    "project_id": "adda-dei-cd2c8",
+    "storage_bucket": "adda-dei-cd2c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10962354557:android:5bba127636e8821f46cc14",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10962354557-tpdc8tvhjc49nd7kttn8hjsh6mj8nprt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2MNr2e8UBNqrG14QRixdtt9Jj5rEwLrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10962354557-tpdc8tvhjc49nd7kttn8hjsh6mj8nprt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

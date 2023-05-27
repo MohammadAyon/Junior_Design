@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_user"
+        android:icon="@drawable/ic_user"
+        android:title="User"
+        android:visible="true" />
+
+
+
+
+
+
+    <item
+        android:id="@+id/nav_tea"
+        android:icon="@drawable/ic_coffe"
+        android:title="Tea"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_chat"
+        android:title="Chat"
+        android:visible="true"/>
+
+
+</menu>
