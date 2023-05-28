@@ -3,24 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_user"
+        android:id="@+id/userFragment"
         android:icon="@drawable/ic_user"
         android:title="User"
         android:visible="true" />
 
-
-
-
-
-
     <item
-        android:id="@+id/nav_tea"
+        android:id="@+id/teaFragment"
         android:icon="@drawable/ic_coffe"
         android:title="Tea"
         android:visible="true"/>
 
     <item
-        android:id="@+id/nav_chat"
+        android:id="@+id/chatFragment"
         android:icon="@drawable/ic_chat"
         android:title="Chat"
         android:visible="true"/>

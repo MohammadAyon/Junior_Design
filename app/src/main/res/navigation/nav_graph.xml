@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/chatFragment">
+    app:startDestination="@id/userFragment">
 
     <fragment
         android:id="@+id/chatFragment"
         android:name="com.example.myapplication.ChatFragment"
         android:label="fragment_chat"
-        tools:layout="@layout/fragment_chat" >
+        tools:layout="@layout/fragment_chat">
         <action
             android:id="@+id/action_chatFragment_to_teaFragment"
             app:destination="@id/teaFragment" />
@@ -21,19 +21,25 @@
         android:id="@+id/userFragment"
         android:name="com.example.myapplication.UserFragment"
         android:label="fragment_user"
-        tools:layout="@layout/fragment_user" >
+        tools:layout="@layout/fragment_user">
         <action
             android:id="@+id/action_userFragment_to_teaFragment"
             app:destination="@id/teaFragment" />
         <action
             android:id="@+id/action_userFragment_to_chatFragment"
             app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_chatFragment2"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_chatFragment3"
+            app:destination="@id/chatFragment" />
     </fragment>
     <fragment
         android:id="@+id/teaFragment"
         android:name="com.example.myapplication.TeaFragment"
         android:label="fragment_tea"
-        tools:layout="@layout/fragment_tea" >
+        tools:layout="@layout/fragment_tea">
         <action
             android:id="@+id/action_teaFragment_to_chatFragment"
             app:destination="@id/chatFragment" />
