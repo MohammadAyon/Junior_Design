@@ -13,11 +13,13 @@ import android.graphics.drawable.ColorDrawable
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.myapplication.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 class SignInActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignInBinding
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var firebaseDatabase: FirebaseDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,19 +49,10 @@ class SignInActivity : AppCompatActivity() {
         binding.forgotPassword.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             val view = layoutInflater.inflate(R.layout.dialog_forgot, null)
-            val userEmail = view.findViewById<EditText>(R.id.editBox)
+
             builder.setView(view)
             val dialog = builder.create()
-            view.findViewById<Button>(R.id.btnReset).setOnClickListener {
-                compareEmail(userEmail)
-                dialog.dismiss()
-            }
-            view.findViewById<Button>(R.id.btnCancel).setOnClickListener {
-                dialog.dismiss()
-            }
-            if (dialog.window != null){
-                dialog.window!!.setBackgroundDrawable(ColorDrawable(0))
-            }
+
             dialog.show()
         }
         binding.signupRedirectText.setOnClickListener {
